@@ -65,7 +65,7 @@ function geraSenha() {
         senha = senha + alfabeto[numeroAleatorio];
     }
     campoSenha.value = senha;
-    classificaSenha();
+    classificaSenha(alfabeto.length);
 }
 function classificaSenha(){
     let entropia = tamanhoSenha * Math.log2(alfabeto.length);
